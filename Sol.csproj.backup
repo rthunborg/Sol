@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7C55744-AD28-4E81-B785-E71B86547D5A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Sol</RootNamespace>
+    <AssemblyName>Sol</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="docs\.bmad-core\agent-teams\team-all.yaml" />
+    <None Include="docs\.bmad-core\agent-teams\team-fullstack.yaml" />
+    <None Include="docs\.bmad-core\agent-teams\team-ide-minimal.yaml" />
+    <None Include="docs\.bmad-core\agent-teams\team-no-ui.yaml" />
+    <None Include="docs\.bmad-core\agents\analyst.md" />
+    <None Include="docs\.bmad-core\agents\architect.md" />
+    <None Include="docs\.bmad-core\agents\bmad-master.md" />
+    <None Include="docs\.bmad-core\agents\bmad-orchestrator.md" />
+    <None Include="docs\.bmad-core\agents\dev.md" />
+    <None Include="docs\.bmad-core\agents\pm.md" />
+    <None Include="docs\.bmad-core\agents\po.md" />
+    <None Include="docs\.bmad-core\agents\qa.md" />
+    <None Include="docs\.bmad-core\agents\sm.md" />
+    <None Include="docs\.bmad-core\agents\ux-expert.md" />
+    <None Include="docs\.bmad-core\checklists\architect-checklist.md" />
+    <None Include="docs\.bmad-core\checklists\change-checklist.md" />
+    <None Include="docs\.bmad-core\checklists\pm-checklist.md" />
+    <None Include="docs\.bmad-core\checklists\po-master-checklist.md" />
+    <None Include="docs\.bmad-core\checklists\story-dod-checklist.md" />
+    <None Include="docs\.bmad-core\checklists\story-draft-checklist.md" />
+    <None Include="docs\.bmad-core\core-config.yaml" />
+    <None Include="docs\.bmad-core\data\bmad-kb.md" />
+    <None Include="docs\.bmad-core\data\brainstorming-techniques.md" />
+    <None Include="docs\.bmad-core\data\elicitation-methods.md" />
+    <None Include="docs\.bmad-core\data\technical-preferences.md" />
+    <None Include="docs\.bmad-core\data\test-levels-framework.md" />
+    <None Include="docs\.bmad-core\data\test-priorities-matrix.md" />
+    <None Include="docs\.bmad-core\enhanced-ide-development-workflow.md" />
+    <None Include="docs\.bmad-core\install-manifest.yaml" />
+    <None Include="docs\.bmad-core\tasks\advanced-elicitation.md" />
+    <None Include="docs\.bmad-core\tasks\apply-qa-fixes.md" />
+    <None Include="docs\.bmad-core\tasks\brownfield-create-epic.md" />
+    <None Include="docs\.bmad-core\tasks\brownfield-create-story.md" />
+    <None Include="docs\.bmad-core\tasks\correct-course.md" />
+    <None Include="docs\.bmad-core\tasks\create-brownfield-story.md" />
+    <None Include="docs\.bmad-core\tasks\create-deep-research-prompt.md" />
+    <None Include="docs\.bmad-core\tasks\create-doc.md" />
+    <None Include="docs\.bmad-core\tasks\create-next-story.md" />
+    <None Include="docs\.bmad-core\tasks\document-project.md" />
+    <None Include="docs\.bmad-core\tasks\execute-checklist.md" />
+    <None Include="docs\.bmad-core\tasks\facilitate-brainstorming-session.md" />
+    <None Include="docs\.bmad-core\tasks\generate-ai-frontend-prompt.md" />
+    <None Include="docs\.bmad-core\tasks\index-docs.md" />
+    <None Include="docs\.bmad-core\tasks\kb-mode-interaction.md" />
+    <None Include="docs\.bmad-core\tasks\nfr-assess.md" />
+    <None Include="docs\.bmad-core\tasks\qa-gate.md" />
+    <None Include="docs\.bmad-core\tasks\review-story.md" />
+    <None Include="docs\.bmad-core\tasks\risk-profile.md" />
+    <None Include="docs\.bmad-core\tasks\shard-doc.md" />
+    <None Include="docs\.bmad-core\tasks\test-design.md" />
+    <None Include="docs\.bmad-core\tasks\trace-requirements.md" />
+    <None Include="docs\.bmad-core\tasks\validate-next-story.md" />
+    <None Include="docs\.bmad-core\templates\architecture-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\brainstorming-output-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\brownfield-architecture-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\brownfield-prd-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\competitor-analysis-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\front-end-architecture-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\front-end-spec-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\fullstack-architecture-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\market-research-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\prd-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\project-brief-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\qa-gate-tmpl.yaml" />
+    <None Include="docs\.bmad-core\templates\story-tmpl.yaml" />
+    <None Include="docs\.bmad-core\user-guide.md" />
+    <None Include="docs\.bmad-core\utils\bmad-doc-template.md" />
+    <None Include="docs\.bmad-core\utils\workflow-management.md" />
+    <None Include="docs\.bmad-core\workflows\brownfield-fullstack.yaml" />
+    <None Include="docs\.bmad-core\workflows\brownfield-service.yaml" />
+    <None Include="docs\.bmad-core\workflows\brownfield-ui.yaml" />
+    <None Include="docs\.bmad-core\workflows\greenfield-fullstack.yaml" />
+    <None Include="docs\.bmad-core\workflows\greenfield-service.yaml" />
+    <None Include="docs\.bmad-core\workflows\greenfield-ui.yaml" />
+    <None Include="docs\.bmad-core\working-in-the-brownfield.md" />
+    <None Include="docs\.github\chatmodes\analyst.chatmode.md" />
+    <None Include="docs\.github\chatmodes\architect.chatmode.md" />
+    <None Include="docs\.github\chatmodes\bmad-master.chatmode.md" />
+    <None Include="docs\.github\chatmodes\bmad-orchestrator.chatmode.md" />
+    <None Include="docs\.github\chatmodes\dev.chatmode.md" />
+    <None Include="docs\.github\chatmodes\pm.chatmode.md" />
+    <None Include="docs\.github\chatmodes\po.chatmode.md" />
+    <None Include="docs\.github\chatmodes\qa.chatmode.md" />
+    <None Include="docs\.github\chatmodes\sm.chatmode.md" />
+    <None Include="docs\.github\chatmodes\ux-expert.chatmode.md" />
+    <None Include="docs\.vscode\settings.json" />
+    <None Include="docs\architecture.md" />
+    <None Include="docs\architecture\algorithms.md" />
+    <None Include="docs\architecture\api-design.md" />
+    <None Include="docs\architecture\data-model-postgresql-postgis.md" />
+    <None Include="docs\architecture\high-level-architecture.md" />
+    <None Include="docs\architecture\index.md" />
+    <None Include="docs\architecture\runtime-components.md" />
+    <None Include="docs\architecture\tooling-import.md" />
+    <None Include="docs\boards\fix-loop-board-v2.md" />
+    <None Include="docs\brief\project-brief.md" />
+    <None Include="docs\decisions\api-rate-limit-design.md" />
+    <None Include="docs\decisions\p1-outcome-provider+adapter-spec.md" />
+    <None Include="docs\decisions\synthetic-probes-plan.md" />
+    <None Include="docs\decisions\time-handling-spec.md" />
+    <None Include="docs\decisions\weather-provider-decision.md" />
+    <None Include="docs\epics\epic-01-project-foundation.md" />
+    <None Include="docs\epics\epic-02-database-foundation.md" />
+    <None Include="docs\epics\epic-03-admin-tooling.md" />
+    <None Include="docs\epics\epic-04-building-data-import.md" />
+    <None Include="docs\epics\epic-05-solar-shadow-engine.md" />
+    <None Include="docs\epics\epic-06-weather-integration.md" />
+    <None Include="docs\epics\epic-07-public-api-core.md" />
+    <None Include="docs\epics\epic-08-launch-readiness.md" />
+    <None Include="docs\epics\index.md" />
+    <None Include="docs\front-end-spec.md" />
+    <None Include="docs\ops\runbook.md" />
+    <None Include="docs\prd-addendum-final.md" />
+    <None Include="docs\prd.md" />
+    <None Include="docs\prd\apis-proposed.md" />
+    <None Include="docs\prd\data-model-high-level.md" />
+    <None Include="docs\prd\definition-of-done-v1.md" />
+    <None Include="docs\prd\dependencies-assumptions.md" />
+    <None Include="docs\prd\functional-requirements.md" />
+    <None Include="docs\prd\index.md" />
+    <None Include="docs\prd\milestones-release-plan.md" />
+    <None Include="docs\prd\non-functional-requirements.md" />
+    <None Include="docs\prd\open-questions.md" />
+    <None Include="docs\prd\risks-mitigations.md" />
+    <None Include="docs\prd\scope-mvp-v1.md" />
+    <None Include="docs\prd\summary-goals.md" />
+    <None Include="docs\prd\technical-considerations.md" />
+    <None Include="docs\prd\user-stories-acceptance-criteria.md" />
+    <None Include="docs\prd\users-jobs-to-be-done.md" />
+    <None Include="docs\qa\assessments\qa-test-strategy.md" />
+    <None Include="docs\qa\gates\po-master-checklist.md" />
+    <None Include="docs\repo\repo-scaffold.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="docs\web-bundles\agents\analyst.txt" />
+    <Content Include="docs\web-bundles\agents\architect.txt" />
+    <Content Include="docs\web-bundles\agents\bmad-master.txt" />
+    <Content Include="docs\web-bundles\agents\bmad-orchestrator.txt" />
+    <Content Include="docs\web-bundles\agents\dev.txt" />
+    <Content Include="docs\web-bundles\agents\pm.txt" />
+    <Content Include="docs\web-bundles\agents\po.txt" />
+    <Content Include="docs\web-bundles\agents\qa.txt" />
+    <Content Include="docs\web-bundles\agents\sm.txt" />
+    <Content Include="docs\web-bundles\agents\ux-expert.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-phaser-game-dev\agents\game-designer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-phaser-game-dev\agents\game-developer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-phaser-game-dev\agents\game-sm.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-phaser-game-dev\teams\phaser-2d-nodejs-game-team.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-unity-game-dev\agents\game-architect.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-unity-game-dev\agents\game-designer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-unity-game-dev\agents\game-developer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-unity-game-dev\agents\game-sm.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-2d-unity-game-dev\teams\unity-2d-game-team.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\beta-reader.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\book-critic.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\character-psychologist.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\cover-designer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\dialog-specialist.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\editor.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\genre-specialist.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\narrative-designer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\plot-architect.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\agents\world-builder.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-creative-writing\teams\agent-team.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\bmad-orchestrator.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-analyst.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-architect.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-designer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-developer.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-pm.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-po.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-qa.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-sm.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\agents\game-ux-expert.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-godot-game-dev\teams\godot-game-team.txt" />
+    <Content Include="docs\web-bundles\expansion-packs\bmad-infrastructure-devops\agents\infra-devops-platform.txt" />
+    <Content Include="docs\web-bundles\teams\team-all.txt" />
+    <Content Include="docs\web-bundles\teams\team-fullstack.txt" />
+    <Content Include="docs\web-bundles\teams\team-ide-minimal.txt" />
+    <Content Include="docs\web-bundles\teams\team-no-ui.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
